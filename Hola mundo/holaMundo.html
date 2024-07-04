@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola Perra</title>
+    <title>Calculadora Moderna</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<p>Perra malass</p>
+<body>
+    <div class="calculator">
+        <div class="display" name="display"></div>
+        <div class="buttons">
+            <button class="btn" id="btnC" onclick=limpiarResultado()>C</button>
+            <button class="btn" id="btn/" onclick="ponerNumero('/')">/</button>
+            <button class="btn" id="btn*" onclick="ponerNumero('*')">*</button>
+            <button class="btn" id="btnDEL" onclick=eliminarNumero()>DEL</button>
+            <button class="btn" id="btn7" onclick="ponerNumero('7')">7</button>
+            <button class="btn" id="btn8" onclick="ponerNumero('8')">8</button>
+            <button class="btn" id="btn9" onclick="ponerNumero('9')">9</button>
+            <button class="btn" id="btn-" onclick="ponerNumero('-')">-</button>
+            <button class="btn" id="btn4" onclick="ponerNumero('4')">4</button>
+            <button class="btn" id="btn5" onclick="ponerNumero('5')">5</button>
+            <button class="btn" id="btn6" onclick="ponerNumero('6')">6</button>
+            <button class="btn" id="btn+" onclick="ponerNumero('+')">+</button>
+            <button class="btn" id="btn1" onclick="ponerNumero('1')">1</button>
+            <button class="btn" id="btn2" onclick="ponerNumero('2')">2</button>
+            <button class="btn" id="btn3" onclick="ponerNumero('3')">3</button>
+            <button class="btn equal" id="btn=" onclick="calculate()">=</button>
+            <button class="btn zero" id="btn0" onclick="ponerNumero('0')">0</button>
+            <button class="btn" id="btn.">.</button>
+        </div>
+    </div>
 
-<body>
-        <script src="app.js"></script>
-</body>
-<body>
-    
+    <script src="app.js"></script>
 </body>
 </html>
