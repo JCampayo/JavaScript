@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #9cafc2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: 2px solid #ced4da;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+    height: 100px;
+    width: 100px;
+}
+
+.cell:hover {
+    background-color: #a2a6aa;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (min-width: 600px) {
+    .cell {
+        height: 120px;
+        width: 120px;
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 768px) {
+    .cell {
+        height: 140px;
+        width: 140px;
+        font-size: 3em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cell {
+        height: 160px;
+        width: 160px;
+        font-size: 3.5em;
+    }
+
+    .container {
+        width: 50%;   
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+}

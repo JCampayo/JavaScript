@@ -8,7 +8,7 @@
             "type": "msedge",
             "request": "launch",
             "name": "Launch Edge against localhost",
-            "url": "http://127.0.0.1:3000/piedrapapeltijera/piedrapapeltijera.html",
+            "url": "http://127.0.0.1:3000/tresenraya/tresenraya.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
